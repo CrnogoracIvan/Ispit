@@ -15,7 +15,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.DetailActivity"></activity>
+
+        <activity
+            android:name=".Activities.DetailActivity">
+
+        </activity>
+
+        <activity
+            android:name=".Preferences.Preferences"
+            android:label="Podesavanja"
+            android:parentActivityName=".Activities.MainActivity"
+            />
+
     </application>
 
 </manifest>

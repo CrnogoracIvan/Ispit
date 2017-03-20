@@ -16,7 +16,7 @@ public class Kontakt {
     public static final String TABLE_NAME_USERS = "ime";
     public static final String TABLE_NAME_USERS_SN = "prezime";
     public static final String FIELD_NAME_ID = "id";
-    public static final String TABLE_NAME_PHOTO = "biografija";
+    public static final String TABLE_NAME_PHOTO = "slika";
     public static final String TABLE_NAME_ADRESS = "adresa";
     public static final String TABLE_NAME_PHONES = "telefoni";
 
@@ -90,5 +90,10 @@ public class Kontakt {
 
     public void setTelefoni(ForeignCollection<Telefon> telefoni) {
         this.telefoni = telefoni;
+    }
+
+    @Override
+    public String toString() {
+        return  "ime i prezime: " + ime + " " + prezime;
     }
 }

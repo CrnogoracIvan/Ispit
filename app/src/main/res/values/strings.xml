@@ -4,4 +4,17 @@
     <string name="add_new_contact">Add cotact</string>
     <string name="main_activity_action_add">Add</string>
 
+
+    <string name="dialog_oApp_naziv">O aplikaciji</string>
+    <string name="dialog_oApp_tekst">Ivan Crnogorac</string>
+    <string name="dialog_oApp_Uredu">U redu</string>
+    <string name="dialog_oApp_Ponisti">Ponisti</string>
+
+    <string-array name="kontak_telefon">
+        <item>Kucni</item>
+        <item>Poslovni</item>
+        <item>Mobilni</item>
+    </string-array>
+
+
 </resources>

@@ -87,4 +87,11 @@ public class Telefon {
     public void setmUser(Kontakt mUser) {
         this.mUser = mUser;
     }
+
+    @Override
+    public String toString() {
+        return  "Kucni telefon='" + kucniTelefon + "/n" +
+                "Mobilni telefon='" + mobilniTelefon + "/n" +
+                "Poslovni telefon='" + poslovniTelefon + "/n";
+    }
 }
