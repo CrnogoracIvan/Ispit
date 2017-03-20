@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     public static String CONTACT_KEY = "ACTOR_KEY";
     public static String NOTIF_TOAST = "notif_toast";
-    public static String NOTIF_STATUS = "notif_statis";
+    public static String NOTIF_STATUS = "notif_status";
 
 
     ///Metoda koja komunicira sa bazom podataka
