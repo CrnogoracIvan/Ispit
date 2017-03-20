@@ -44,7 +44,7 @@ import java.sql.SQLException;
             }
         }
 
-        public Dao<Telefon, Integer> getMovieDao() throws SQLException {
+        public Dao<Telefon, Integer> getTelefonDao() throws SQLException {
             if (mTelefonDao == null) {
                 mTelefonDao = getDao(Telefon.class);
             }
@@ -52,7 +52,7 @@ import java.sql.SQLException;
             return mTelefonDao;
         }
 
-        public Dao<Kontakt, Integer> getActorDao() throws SQLException {
+        public Dao<Kontakt, Integer> getKontaktDao() throws SQLException {
             if (mKontaktDao == null) {
                 mKontaktDao = getDao(Kontakt.class);
             }

@@ -21,7 +21,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.RatingBar;
 import android.widget.Toast;
 
 import com.example.androiddevelopment.ispitnizadatak.DB.Kontakt;
@@ -61,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             if (adapter != null) {
                 try {
                     adapter.clear();
-                    List<Kontakt> list = getDatabaseHelper().getActorDao().queryForAll();
+                    List<Kontakt> list = getDatabaseHelper().getKontaktDao().queryForAll();
 
                     adapter.addAll(list);
 
@@ -104,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
 
         final ListView listView = (ListView) findViewById(R.id.lista_kontakata);
         try {
-            List<Kontakt> list = getDatabaseHelper().getActorDao().queryForAll();
+            List<Kontakt> list = getDatabaseHelper().getKontaktDao().queryForAll();
 
             ListAdapter adapter = new ArrayAdapter<>(MainActivity.this, R.layout.list_item, list);
             listView.setAdapter(adapter);
@@ -172,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
 
                         try {
 
-                            getDatabaseHelper().getActorDao().create(k);
+                            getDatabaseHelper().getKontaktDao().create(k);
 
                             boolean toast = SharedPrefs.getBoolean(NOTIF_TOAST, false);
                             boolean status = SharedPrefs.getBoolean(NOTIF_STATUS, false);

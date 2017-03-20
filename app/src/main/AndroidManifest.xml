@@ -17,7 +17,10 @@
         </activity>
 
         <activity
-            android:name=".Activities.DetailActivity">
+            android:name=".Activities.DetailActivity"
+            android:icon="@mipmap/ic_launcher"
+            android:label="Detalji"
+            android:parentActivityName=".Activities.MainActivity">
 
         </activity>
 
