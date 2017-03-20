@@ -3,6 +3,7 @@ package com.example.androiddevelopment.ispitnizadatak.Activities;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 import android.widget.EditText;
 import android.widget.RatingBar;
 
@@ -37,6 +38,11 @@ public class DetailActivity extends AppCompatActivity {
         return databaseHelper;
     }
 
+    //kreiranje menija
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.detail_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
