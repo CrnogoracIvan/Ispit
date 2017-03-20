@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">IspitniZadatak</string>
+
+    <string name="add_new_contact">Add cotact</string>
+    <string name="main_activity_action_add">Add</string>
+
 </resources>
